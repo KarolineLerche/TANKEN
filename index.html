@@ -17,7 +17,9 @@
     <!--JAVASCRIPT -->
     <script defer src=""></script>
 
-    <!-- FONTS -->
+     <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/69e662559e.js" crossorigin="anonymous"></script>
+
 
     
 
@@ -25,138 +27,149 @@
 
 <body>
 
+<!-- HEADER -->
+<header>
+    <nav>
+        <a href="#"> Om os</a>
+        <a href="#"> Menukort </a>
+        <a href="#"> Events </a>
+    </nav> 
+</header>
+
+
 <main>
 
+ <!-- FORSIDE -->
     <section>
-
         <div class="flexcontainer" id="index_top">
+            <div class="blue_box flexcontainer" id="index_logobox">
 
-                <div class="blue_box flexcontainer" id="index_logobox">
-
-                    <div>
-                        <img class="max_img" src="images/hvid_logo.png" alt="Forside Logo">
-                    </div>
-
-                    <div>
-                        <h1 class="align_right"> 
-                            TANKEN 
-                            <br>
-                            Aarhus C 
-                            <br>
-                            Graven
-                            <br>
-                            26
-                        </h1>
-                        <button class="whitebutton" onclick=" window.open('http://google.com','_blank')"> Om os </button>
-                    </div>
-                </div>  
-    
                 <div>
-                    <img class="max_img" src="images/forside.jpg" alt="Forside Billede">
-
-                    <p> Åben nu </p>
-                    <h1> 
-                        søn - ons 09:00 - 22:00 
-                        <br>
-                        fre - lør 09:00 - sent
-                    </h1>
+                    <img class="max_img" src="images/hvid_logo.png" alt="Forside Logo">
                 </div>
-           
+
+                <div>
+                    <h1 class="align_right"> TANKEN <br> Aarhus C <br> Graven <br> 26 </h1>
+
+                    <button class="whitebutton" onclick=" window.open('http://google.com','_blank')"> Om os </button>
+                </div>
+            </div>  
+    
+            <div>
+                <img class="max_img" src="images/forside.jpg" alt="Forside Billede">
+
+                <p> Åben nu </p>
+                <h1> søn - ons 09:00 - 22:00 <br> fre - lør 09:00 - sent </h1>
+            </div>
         </div>
    
     
     </section>
 
+ <!-- PIZZA NYHED -->
     <section>
-    <h1 class="align_right" id="overskrift_nyhed"> Nyhed </h1>
+        <h1 class="align_right" id="overskrift_nyhed"> Nyhed </h1>
 
-    <div class="flexcontainer center" id="pizzanews">
-        <div>
-            <h2> 
-                TANKEN samarbejder med 
-                <br>
-                Pizza & bar - By Mefisto 
-            </h2>
+        <div class="flexcontainer center" id="pizzanews">
+            <div>
+                <h2> TANKEN samarbejder med <br> Pizza & bar - By Mefisto </h2>
+
+                <p>
+                    Det er nu muligt at nyde din yndlingspizza på TANKEN. <br> 
+                    I samarbejde med vores nabo Mefisto, er drømme gået <br>
+                    i opfyldelse. Fremadrettet kan du bestille friskbagt <br>
+                    pizza, og den bliver leveret lige til dig på Tanken. 
+                </p>
+
+                <button class="bluebutton" onclick=" window.open('http://google.com','_blank')"> Læs mere </button>
+            </div>  
+
+            <div>
+                <img class="max_img" src="images/pizza.png" alt="Pizza Illustration">
+            </div>
+        </div>
+
+    </section>
+
+ <!-- #TANKENDERTÆLLER -->
+    <section class="flexcontainer overlap center" id="TANKENDERTÆLLER">
+        <div class="blue_box">
+            <h2> #TANKENDERTÆLLER </h2>
 
             <p>
-                Det er nu muligt at nyde din yndlingspizza på TANKEN.
-                <br> 
-                I samarbejde med vores nabo Mefisto, er drømme gået 
-                <br>
-                i opfyldelse. Fremadrettet kan du bestille friskbagt 
-                <br>
-                pizza, og den bliver leveret lige til dig på Tanken. 
+                Det er nu muligt at nyde din yndlingspizza på TANKEN. <br> 
+                I samarbejde med vores nabo Mefisto, er drømme gået <br>
+                i opfyldelse. Fremadrettet kan du bestille friskbagt <br>
+                pizza, og den bliver leveret lige til dig på Tanken. <br> 
+                Det er nu muligt at nyde din yndlingspizza på TANKEN. <br> 
+                I samarbejde med vores nabo Mefisto, er drømme gået <br>
+                i opfyldelse. Fremadrettet kan du bestille friskbagt <br>
+                pizza, og den bliver leveret lige til dig på Tanken.
             </p>
-
-            <button class="bluebutton" onclick=" window.open('http://google.com','_blank')"> Læs mere </button>
         </div>  
 
         <div>
-            <img class="max_img" src="images/pizza.png" alt="Pizza Illustration">
+            <img class="max_img" src="images/mand.jpg" alt="Mand Hælder Drink">
         </div>
-    </div>
+    </section>
+
+ <!-- BOLLEKORT -->
+    <section>
+        <h1 class="align_left" id="overskrift_bollekort"> Tankens bollekort </h1>
+
+        <div class="flexcontainer" id="bollekort">
+            <div>
+                <img class="max_img" src="images/bollekort.png" alt="Bollekort">
+            </div>  
+
+            <div class="blue_box">
+                <h2> Tænker du på rabat? </h2>
+
+                <p>
+                    Hos TANKEN får du rabat hvis du køber et bollekort. <br>
+                    Ved køb af et bollekort får du 10 boller og 10 kopper <br>
+                    kaffe, som du kan indløse når du har lyst.
+                </p>  
+            </div>
+
+            <div> 
+                <img class="max_img" src="images/sticker_bollekort.png" alt="Sticker Bollekort">
+            </div>
+        </div>
+    </section>
 
 
-</section>
+ <!-- FOOTER -->
+    <footer class="flexcontainer blue_box">
+            <div>
+                <h1 class="italic"> 
+                    MAN -TOR 08:00 - 18:00 <br>
+                    FRE - SØN 08:00 - 02:00    
+                </h1>
 
-<section class="flexcontainer overlap center" id="TANKENDERTÆLLER">
-    <div class="blue_box">
-        <h2> #TANKENDERTÆLLER </h2>
+                <h1> 
+                    TANKEN <br>
+                    GRAVEN 26 <br>
+                    8000 AARHUS C    
+                </h1>
+            </div>
 
-        <p>
-            Det er nu muligt at nyde din yndlingspizza på TANKEN.
-            <br> 
-            I samarbejde med vores nabo Mefisto, er drømme gået 
-            <br>
-            i opfyldelse. Fremadrettet kan du bestille friskbagt 
-            <br>
-            pizza, og den bliver leveret lige til dig på Tanken.
-            <br> 
-            Det er nu muligt at nyde din yndlingspizza på TANKEN.
-            <br> 
-            I samarbejde med vores nabo Mefisto, er drømme gået 
-            <br>
-            i opfyldelse. Fremadrettet kan du bestille friskbagt 
-            <br>
-            pizza, og den bliver leveret lige til dig på Tanken.
-        </p>
-    </div>  
+            <div>
+                <img class="max_img" src="images/hvid_logo.png" alt="Forside Logo">
+            </div>
 
-    <div>
-        <img class="max_img" src="images/mand.jpg" alt="Mand Hælder Drink">
-    </div>
+            <div class="align_right">
+                <h1> 
+                    Instagram Facebook   
+                </h1>
 
-</section>
+                <h1 class="italic"> TANKENGRAVEN@GMAIL.COM </h1>
 
-<section  >
-    <h1 class="align_left" id="overskrift_bollekort"> Tankens bollekort </h1>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
 
-    <div class="flexcontainer" id="bollekort">
-    <div>
-        <img class="max_img" src="images/bollekort.png" alt="Bollekort">
-    </div>  
-
-    <div class="blue_box">
-        <h2> Tænker du på rabat? </h2>
-
-        <p>
-            Hos TANKEN får du rabat hvis du køber et bollekort. 
-            <br>
-            Ved køb af et bollekort får du 10 boller og 10 kopper 
-            <br>
-            kaffe, som du kan indløse når du har lyst.
-        </p>  
-    </div>
-
-    <div> 
-        <img class="max_img" src="images/sticker_bollekort.png" alt="Sticker Bollekort">
-    </div>
-</div>
-</section>
-
-
-
-
+            </div>
+    </footer>
 
 
 

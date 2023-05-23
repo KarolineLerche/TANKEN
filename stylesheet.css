@@ -8,7 +8,7 @@
 
 
 
-/* FONTS */
+/* FONTS */ 
 
 h1{
     font-family: bebas-neue, sans-serif;
@@ -31,7 +31,9 @@ p{
     line-height: 140%;
 }
 
-
+.italic{
+    font-style: italic;
+}
 
 
 
@@ -121,7 +123,57 @@ p{
 
 
 
+
 /* HEADER */
+header{
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    display: flex; 
+    justify-content: flex-end;  
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+    margin-left: 3%;
+    float: right;
+}
+
+nav{
+        position: fixed;
+        width: 100%;
+        background-color: yellowgreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -308,6 +360,62 @@ p{
 
 
 /* FOOTER */
+
+footer{
+    font-size: 80%;
+}
+/* venstre side */
+footer div:first-child{
+    width: 40%;
+    margin-right: 9%;
+}
+
+footer div:first-child h1:first-child{
+    padding: 5%;
+}
+footer div:first-child h1:last-child{
+    padding: 5%;
+}
+
+/* midten */
+footer div:nth-child(2){
+    width: 20%;
+}
+
+footer div:nth-child(2) img{
+    width: 50%;
+    padding-top: 29%;  
+}
+
+
+/* højre side */ 
+footer div:last-child{
+    width: 40%;
+}
+
+footer div:last-child h1:first-child{
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+footer div:last-child h1:nth-child(2){
+    padding-right: 5%;
+    padding-bottom: 20%;
+}
+
+i{
+    font-size: 300%;
+    padding-right: 5%;
+}
+
+
+
+
+
+
+
+
+
 
 
 
