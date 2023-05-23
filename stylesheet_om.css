@@ -1,0 +1,407 @@
+/* GENERELT */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* FONTS */
+
+h1{
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;     
+}
+
+h2{
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h3{
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    color: #EB7C30;
+}
+
+p{
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 130%;
+    line-height: 140%;
+}
+
+
+
+
+
+
+/* KNAPPER */ 
+
+    .whitebutton{
+        border: 2px solid #ffffff;
+        background-color: #1414DB;
+        color: white; 
+    }
+
+    .bluebutton{
+        border: 2px solid #1414DB;
+        background-color: #ffffff;
+        color: #1414DB;
+    }
+
+    .bluebutton::before{
+        background-color: #1414DB;
+        color: #ffffff;
+    }
+
+
+    button{
+        padding: 10px;
+        font-size: 15px;
+        outline: none;
+        position: relative;
+        letter-spacing: 1px;
+        margin-right: 4%;
+    }
+   
+    button::before{
+        content: 'Button';
+        /*Button's value/text-content */
+        position: absolute;
+        top: -14%;
+        left: -7%;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100%;
+        color: #1414db;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.15s ease-in-out;
+        font-weight: bold;
+    }
+   
+   button:hover::before{
+    top: 0;
+    left: 0;
+}
+
+
+
+
+/* KLASSER */
+.blue_box{
+    background-color: #1414DB;
+    color: white;
+}
+
+.flexcontainer{
+    display: flex;
+    width: 100%;
+}
+
+.max_img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.center{
+    justify-content: center;
+}
+
+.align_right{
+    text-align: right;
+}
+
+
+.container_overlap{
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OM OS ----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+ /* videosection --------------------*/
+
+ /* font */
+ #videosection h1{
+    font-size: 45pt;
+    line-height: 50pt;
+    font-size: 520%;
+    margin-bottom: 5%;
+
+
+}
+
+#videosection h2{
+    font-size: 15pt;
+    line-height: 5pt;
+    font-size: 160%;
+    margin-bottom: 5%;
+
+}
+
+#videosection p{
+
+
+    text-align: left;
+}
+
+
+
+#videosection{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#videocontainer{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+
+    height: 900px;
+    justify-content:left;
+    flex-wrap: wrap;
+
+}
+
+#videocontainer div:first-child{
+    width: 50%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 15%;
+    height: 100%;
+    justify-content:center;
+}
+
+
+
+
+#video{
+
+    position: absolute;
+    left: 40%;
+    bottom: 42%;
+    width: 60%;
+    height: 50%;
+
+}
+
+
+
+/* merchsection --------------------*/
+
+
+/* class */
+.sticker_title_section{
+    height: 1200px;
+    
+}
+
+.sticker_title_section h1{
+    font-size: 400%;
+}
+
+
+
+.sticker_title_section h2{
+    font-size: 350%;
+    font-weight: 500;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 80%;
+}
+
+
+.sticker_title_section h3{
+    font-size: 400%;
+}
+
+.sticker_title_section p{
+    text-align: right;
+}
+
+.sticker_title_section a{
+    color: black;
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 100;
+    font-style:normal;
+    font-size: 130%;
+}
+
+
+
+
+.sticker_title_container{
+    margin-left: 10%;
+    margin-right: 10%;
+ 
+}
+.sticker_title_container{
+    display: flex;
+    justify-content: left;
+    text-align: right;
+    margin-top: 8%;
+    height: fit-content;
+}
+
+.sticker{
+
+
+}
+
+
+.black_orange_title{
+    width: 60%;
+
+
+}
+
+
+
+.three_img{
+    justify-content: space-around;
+
+    margin-bottom: 10%;
+    flex-wrap: wrap;
+}
+
+.three_img div{
+    width: 24%;
+
+
+
+/* evt til responsive
+    min-width: 400px;
+    min-height: 400px;
+*/
+}
+
+
+
+
+/* id tshirt*/
+
+#tshirtsection h1{
+    padding-top: 5%;
+    padding-right: 12%; 
+    margin-bottom: 5%;
+    text-align: right;
+}
+
+
+
+
+#størrelser{
+    margin-top: 3%;
+    text-align: right;
+    margin-right: 18%;
+    color:#EB7C30;
+    font-size: 120%;
+}
+
+
+#title_tshirt{
+    margin-left: 10%;
+}
+
+#sticker_tshirt{
+    width: 20%;
+}
+
+
+/* id totebag  */
+
+#totebagcontainer{
+    text-align: left;
+    margin-left: 5%;
+}
+
+#totebagcontainer p{
+    text-align: left;
+}
+
+
+
+#title_totebag{
+    margin-left: 0%;
+    margin-right: 10%;
+}
+
+#sticker_totebag{
+    width: 20%;
+    margin-left: 10%;
+}
+
+#img_totebag{
+    margin-top:5%;
+
+}
+
+#title_totebag h2{
+    font-size: 450%;
+}
+
+
+
+#white_space{
+    height: 1px;
+}
+
+
+
+/* MENUKORT */
+
+
+
+
+
+/* EVENTS */
+
+
+
+
+
+/* FOOTER */
+
+
+
+
+
+/* RESPONSIVE */
+
