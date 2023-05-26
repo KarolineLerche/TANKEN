@@ -9,7 +9,6 @@
 
 
 /* FONTS */ 
-
 h1{
     font-family: bebas-neue, sans-serif;
     font-weight: 400;
@@ -22,11 +21,21 @@ h2{
     font-style: normal;
 }
 
+h3{
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    color: #EB7C30;
+}
+
 p{
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 300;
     font-style: normal;
-    text-align: left;
+    
+}
+
+.p_size{
     font-size: 130%;
     line-height: 140%;
 }
@@ -35,11 +44,38 @@ p{
     font-style: italic;
 }
 
+.merchsection span{
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
+
+/* FONTS MERCH + INSTAGRAM SEKTION */ 
+.merchsection h1{
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
+
+.merchsection h2{
+    font-size: 350%;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+}
+
+.merchsection h3{
+    font-size: 400%;
+}
+
+.merchsection a{
+    color: black;
+    font-family: ff-dagny-web-pro, sans-serif;
+    text-decoration: none;
+    font-size: 130%;  
+}
 
 
 /* KNAPPER */ 
-
     .whitebutton{
         border: 2px solid #ffffff;
         background-color: #1414DB;
@@ -56,9 +92,21 @@ p{
         background-color: #1414DB;
         color: #ffffff;
     }
+    
+    .whitebutton::before{
+    color: #1414db;
+    background-color: rgb(255, 255, 255);
+    }
 
+    #læsmere_button::before{
+        content: 'Læs mere';
+    }
 
-    button{
+    #omos_button::before{
+        content: 'Om os';
+    }
+
+   .cta_button{
         padding: 10px;
         font-size: 15px;
         outline: none;
@@ -67,16 +115,12 @@ p{
         margin-right: 4%;
     }
    
-    button::before{
-        content: 'Button';
-        /*Button's value/text-content */
+    .cta_button::before{
         position: absolute;
         top: -14%;
         left: -7%;
-        background-color: rgb(255, 255, 255);
         width: 100%;
         height: 100%;
-        color: #1414db;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -84,10 +128,121 @@ p{
         font-weight: bold;
     }
    
-   button:hover::before{
-    top: 0;
-    left: 0;
-}
+    .cta_button:hover::before{
+        top: 0;
+        left: 0;
+    }
+
+    .cta_button:hover{
+        cursor: pointer;
+    }
+
+
+  
+
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: red; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+      }
+      
+      #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+      }
+
+
+
+
+
+    
+    
+
+
+
+/* MODALVINDUE */ 
+    #modalButton{
+        height: 12%;
+        width: 12%;
+        position: fixed;
+        background-color: #EB7C30;
+        margin-top: 40%;
+        font-family: bebas-neue, sans-serif;
+        font-weight: 400;
+        font-style: normal; 
+        color: white;
+        text-align: left;
+        padding-left: 1%;
+        font-size: 140%;   
+    }
+    
+    .modal{
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgb(0,0,0,0.4);
+    }
+    
+    .modal-content{
+        background-color: #EB7C30;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%;
+        text-align: center;
+        height: 60%;
+    }
+    
+    #btnBeer{
+        width: 30%;
+        height: 7%;
+        font-size: 14px;
+    }
+    
+    #yourBeer{
+        font-size: 30px;
+        margin-top: 10%;
+    }
+    
+    .close{
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus{
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -116,10 +271,39 @@ p{
     text-align: right;
 }
 
-
 .container_overlap{
     position: relative;
 }
+
+.two_pics{
+    padding: 10%;
+}
+
+.two_pics div:first-child{
+    padding-right: 5%;
+
+}
+
+.black_headlines{
+font-size: 300%;
+}
+
+.omos_sticker{
+    width: 20%;
+}
+
+.three_img{
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+}
+
+.three_img div{
+    width: 24%;
+}
+
+
+
+
 
 
 
@@ -129,27 +313,35 @@ header{
     font-family: bebas-neue, sans-serif;
     font-weight: 400;
     font-style: normal; 
-    display: flex; 
-    justify-content: flex-end;  
+    display: flex;  
 }
 
 nav a{
     text-decoration: none;
     color: black;
     font-size: 150%;
-    margin-left: 3%;
-    float: right;
+    margin-left: 3%; 
+    padding-right: 6%;
+    padding-left: 2%; 
 }
 
 nav{
-        position: fixed;
-        width: 100%;
-        background-color: yellowgreen;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    width: 20%;
+    margin-left: 80%;
+    z-index: 1;    
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-
-
-
+header img{
+    position: absolute;
+    width: 6%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
 
 
 
@@ -186,17 +378,13 @@ nav{
 #index_top div:last-child{
     width: 45%;
     padding-bottom: 2%;  
+    width: 45%;
 }
 
 #index_top div:last-child img{
     margin-top: 9%;
     width: 97%;  
-    margin-bottom: 2%;
-}
-
-#index_top div:last-child h1, #index_top div:last-child p{
-    text-align: right;
-    padding-right: 3%;
+    margin-bottom: 1%;
 }
 
 /* - venstre side - */
@@ -207,41 +395,73 @@ nav{
     padding-bottom: 15%;
 }
 
-#index_top div:first-child h1{
+
+
+
+/* Åben / lukket */ 
+#openNow{
+    font-size: 25px;
+    color: rgb(57, 215, 57);
+    display: none;
+}
+
+#closed{
+    font-size: 25px;
+    color: rgb(215, 40, 40);
+    display: none;
+}
+
+
+
+/* - forside font - */
+#overskrift_forside{
     padding-top: 18%;
     font-size: 450%;
     line-height: 130%;
     letter-spacing: 5px;
     padding-bottom: 10%;
+    text-align: right;
+    padding-right: 3%;
 }
 
-#index_logobox div:first-child{
-    width: 20%;
-    padding-top: 5%;
-    padding-left: 5%;
+#index_top p{
+    text-align: right;
+    padding-right: 3%;
 }
 
-#index_logobox div:last-child{
-    width: 80%;
+#index_top div:last-child h1{
+    margin-right: 3%;
+    width: 215%;
 }
+
+#index_top div:last-child h6{
+    width: 215%;
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 130%;
+}
+
+
+
+
 
 
 /* Index PIZZA sektion */
 /* Nyhed overskrift */ 
 #overskrift_nyhed{
-    font-size: 300%;
     margin-right: 8%;
     margin-top: 5%;
 }
 
 /* - højre side - */ 
-    #pizzanews div{
-        margin-top: 6%;  
-    }
+#pizzanews div{
+    margin-top: 6%;  
+}
 
-    #pizzanews div:last-child{
+#pizzanews div:last-child{
         width: 30%;  
-    }
+}
 
 /* - venstre side - */ 
 #pizzanews div:first-child{
@@ -252,6 +472,16 @@ nav{
 #pizzanews div:first-child button{
     margin-top: 8%;
     margin-left: 2%; 
+}
+
+/* - Pizza der drejer - */
+#pizzaTurn{
+    animation: rotateImage 60s linear infinite;
+}
+
+@keyframes rotateImage{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
 
 
@@ -284,7 +514,6 @@ nav{
 /* Index Bollekort sektion */
 /* overskrift */ 
 #overskrift_bollekort{
-    font-size: 300%;
     margin-top: 15%;
     margin-left: 10%;
 }
@@ -342,6 +571,92 @@ nav{
 
 
 /* OM OS */
+/* Video sektion */
+ /* font */
+ #videosection h1{
+    font-size: 520%;
+    margin-bottom: 5%;
+    line-height: 120%;
+}
+
+#videosection h2{
+    margin-bottom: 5%;
+}
+
+#videosection{
+    margin-top: 17%;
+}
+
+#videocontainer{
+    width: 80%;
+}
+
+#videocontainer div:first-child{
+    width: 60%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 15%;    
+}
+
+#video{
+    position: absolute;
+    left: 48%;
+    bottom: 42%;
+    width: 50%;
+    height: 50%;
+}
+
+/* MERCH SEKTION */
+/* Font */
+#overskrift_merch{
+    margin-right: 14%;
+}
+
+/* T-shirt sektion */
+#tshirtcontainer{
+    padding-right: 8%;
+}
+
+#størrelser{
+    margin-top: 3%;
+    text-align: right;
+    margin-right: 18%;
+    color:#EB7C30;
+    font-size: 120%;
+}
+
+#sticker_tshirt{
+    margin-right: 10%;
+}
+
+/* Totebag sektion */
+#totebagcontainer{
+    text-align: left;
+    margin-left: 10%;
+}
+
+#totebagcontainer p{
+    text-align: left;
+}
+
+#totebagcontainer{
+    margin-bottom: 5%;
+}
+
+#sticker_totebag{
+    float: right;
+    margin-right: 14%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -354,6 +669,85 @@ nav{
 
 
 /* EVENTS */
+/* Denne uge sektion */
+#overskrift_denneuge{
+    margin-top: 17%;
+    margin-left: 15%;
+    
+}
+
+#denneuge{
+    margin-top: 5%;
+    padding-left: 10%;
+    margin-bottom: 16%;
+}
+
+/* venstre side */
+#denneuge div:first-child{
+    width: 40%;
+    padding: 3%;
+}
+
+/* højre side */ 
+#denneuge div:last-child{
+    width: 40%;   
+}
+
+#denneuge div:last-child img{
+    width: 90%; 
+    padding-top: 10%;
+    margin-left: 5%;
+}
+
+/* Kommende events sektion */
+#overskrift_kommendeevents{
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-bottom: 3%;
+    font-size: 300%; 
+}
+
+#kommendeevents{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    padding-bottom: 8%;
+}
+
+/* venstre side */
+#kommendeevents div:first-child{
+padding-right: 3%;
+padding-left: 2%;
+
+}
+
+/* midten */ 
+#kommendeevents div:nth-child(2){
+    margin-right: 5%;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
